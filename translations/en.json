@@ -1,0 +1,28 @@
+{
+  "config": {
+    "name": "Homegear",
+    "description": "Run the Homegear smart home daemon with automatic backups to /data for persistence."
+  },
+  "network": {
+    "80/tcp": {
+      "name": "HTTP",
+      "description": "Homegear web interface over HTTP."
+    },
+    "443/tcp": {
+      "name": "HTTPS",
+      "description": "Homegear web interface over HTTPS."
+    },
+    "2001/tcp": {
+      "name": "BidCoS",
+      "description": "HomeMatic BidCoS interface."
+    },
+    "2002/tcp": {
+      "name": "HomeMatic IP",
+      "description": "HomeMatic IP interface."
+    },
+    "2003/tcp": {
+      "name": "Wired",
+      "description": "HomeMatic Wired interface."
+    }
+  }
+}

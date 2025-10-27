@@ -1,0 +1,26 @@
+name: "Homegear"
+version: "0.9.x"
+slug: "homegear"
+description: "Homegear Smart Home Daemon with backup and restore to /data for persistence"
+arch:
+  - amd64
+  - armv7
+  - aarch64
+startup: "services"
+boot: "auto"
+hassio_api: false
+hassio_role: "default"
+host_network: false
+ports:
+  80/tcp: 5000
+  443/tcp: 5443
+  2001/tcp: 2001
+  2002/tcp: 2002
+  2003/tcp: 2003
+environment:
+  TZ: Europe/Berlin
+privileged:
+  - NET_ADMIN
+  - SYS_ADMIN
+  - SYS_RAWIO
+#image: "homegear/homegear"
