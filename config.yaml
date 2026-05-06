@@ -1,5 +1,5 @@
 name: "Homegear"
-version: "0.10.0"
+version: "0.10.2"
 slug: "homegear"
 description: "Homegear Smart Home Daemon with backup and restore to /data for persistence"
 arch:
@@ -17,6 +17,7 @@ ports:
   2001/tcp: 2001
   2002/tcp: 2002
   2003/tcp: 2003
+uart: true
 environment:
   TZ: Europe/Berlin
 privileged:
