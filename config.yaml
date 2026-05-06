@@ -1,5 +1,5 @@
 name: "Homegear"
-version: "0.9.x"
+version: "0.10.0"
 slug: "homegear"
 description: "Homegear Smart Home Daemon with backup and restore to /data for persistence"
 arch:
