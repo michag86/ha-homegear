@@ -17,7 +17,6 @@ ports:
   2001/tcp: 2001
   2002/tcp: 2002
   2003/tcp: 2003
-uart: true
 environment:
   TZ: Europe/Berlin
 privileged:
@@ -25,6 +24,8 @@ privileged:
   - SYS_ADMIN
   - SYS_RAWIO
 #image: "homegear/homegear"
-
+options:
+  uart: false
+  devices: null
 schema:
   device: device(subsystem=tty)?
