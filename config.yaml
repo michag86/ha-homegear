@@ -1,5 +1,5 @@
 name: "Homegear"
-version: "0.10.4"
+version: "0.10.5"
 slug: "homegear"
 description: "Homegear Smart Home Daemon with backup and restore to /data for persistence"
 arch:
@@ -26,11 +26,12 @@ privileged:
 #image: "homegear/homegear"
 options:
   uart: false
-  devices:
-    - /dev/ttyUSB0
-  device: null
+  devices: []
+  full_access: false
+  # device: null
 schema:
   uart: bool
+  full_access: bool
   devices:
-    - str?
-  device: device(subsystem=tty)?
+    - device(subsystem=tty)?
+  #device: device(subsystem=tty)?
